@@ -3,6 +3,7 @@ import numpy as np
 import time
 import keyring
 import datetime
+import requests
 
 
 bay_area_cities = ["Alameda",#	City	Alameda	73,812	10.61	27.5	April 19, 1854
@@ -116,7 +117,7 @@ ap_base_url = "http://api.openweathermap.org/data/2.5/air_pollution?"
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 # 60 caslls per minute
 sleep = np.ceil(len(bay_area_cities)/60)
-for city in bay_area_cities:
+for city in bay_area_cities[:5]:
     # 60 caslls per minute
     time.sleep(sleep)
     complete_url = base_url + "appid=" + keyring.get_password('owm','connerbrown') + "&q=" + city
@@ -162,8 +163,8 @@ for city in bay_area_cities:
     df = df.append(s,ignore_index=True)
 df['dt_pt'] = pd.to_datetime(datetime.datetime.now())
 
-
-df_full = pd.read_csv('bay_area_hourly.csv')
+pwd = "/Users/connerbrown/Documents/Github/dslab/public data/weather/"
+df_full = pd.read_csv(pwd+'bay_area_hourly.csv',index_col=0)
 
 df_full = df_full.append(df,ignore_index=True)
-df_full.to_csv('bay_area_hourly.csv')
+df_full.to_csv(pwd+'bay_area_hourly.csv')
