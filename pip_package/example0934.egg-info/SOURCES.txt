@@ -1,8 +1,11 @@
+README.md
 setup.py
+dist/example0934-0.1.0-py3-none-any.whl
+dist/example0934-0.1.0.tar.gz
 example0934/__init__.py
 example0934/example.py
 example0934.egg-info/PKG-INFO
 example0934.egg-info/SOURCES.txt
 example0934.egg-info/dependency_links.txt
-example0934.egg-info/requires.txt
 example0934.egg-info/top_level.txt
+example0934/__pycache__/__init__.cpython-37.pyc

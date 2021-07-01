@@ -4,11 +4,11 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='example0934',
-    version='0.1.0',    
+    version='0.2.0',    
     description='A example Python package',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/cobrobrown/dslab/pip package/example0934",
+    url="https://github.com/cobrobrown/dslab/pip_package/example0934",
     author='Conner Brown',
     author_email='cobrobrown@gmail.com',
     license='BSD 2-clause',
