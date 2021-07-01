@@ -1,0 +1,8 @@
+setup.py
+example0934/__init__.py
+example0934/example.py
+example0934.egg-info/PKG-INFO
+example0934.egg-info/SOURCES.txt
+example0934.egg-info/dependency_links.txt
+example0934.egg-info/requires.txt
+example0934.egg-info/top_level.txt
