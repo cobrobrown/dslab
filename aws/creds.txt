@@ -1,0 +1,3 @@
+user01
+access key id = AKIAQYHE4QT5OXO4QEMA
+access secret key = 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
